@@ -1,46 +1,38 @@
-# Getting Started with Create React App
+# 카페 포인트 적립 앱
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+　
+ 
+## 기획 의도
 
-## Available Scripts
+- 카페를 하는 지인이 포인트 적립 시스템이 필요하다는 얘기를 들었는데, 아직 내 실력에서 상업화 할수 있는 서비스를 내기엔 힘들지만 내가 할 수 있는 수준에서 서비스를 기획하고 구현 해보고 싶었다.
 
-In the project directory, you can run:
+## 개발 환경
 
-### `yarn start`
+- BACKEND
+  - 미정 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- FRONTEND
+   - 	![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) 	![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+   
+## 서비스 다이어그램
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![적립프로그램 다이어그램](https://user-images.githubusercontent.com/96227239/182618073-b1807b63-77f2-4e01-8080-f9f854f10ff0.png)
 
-### `yarn test`
+- 서비스를 사용할 주 디바이스는 패드(태블릿)을 생각했으나 일단 웹서비스로 구현한다. POS의 결제 데이터와 연동되어 결제금액을 받아올 수 있으면 좋겠지만, 그 정도까지는 정보를 얻을 수 없기에 일단은 POS의 데이터 연동없이 서비스를 구축하고자 한다.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 서비스 기능
 
-### `yarn build`
+- 주요 기능
+  - 회원가입 (필요 정보 : 휴대폰 번호, 성함)
+  - 포인트 적립
+  - 포인트 사용
+  - 포인트 조회
+  - 포인트 이력
+  
+- 부가 기능
+  - 포인트 적립 취소 (관리자 권한, 이용자 본인 확인 필요)
+  - 회원 등급 (총 결제 금액에 따른 등급 세분화, 적립율 차이 등)
+  
+## 일정
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- 22.08.34 ~
