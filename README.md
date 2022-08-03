@@ -36,3 +36,11 @@
 ## 일정
 
 - 22.08.34 ~
+
+## 화면 구성
+
+- Figma
+
+![image](https://user-images.githubusercontent.com/96227239/182629256-cf92e4c1-0090-47b2-a28f-5dba4e9abfe9.png) ![image](https://user-images.githubusercontent.com/96227239/182629335-8234a1c8-4b07-421d-bfcc-6d93763e99ec.png)
+
+
