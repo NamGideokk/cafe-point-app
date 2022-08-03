@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nanum Gothic";
+}
+
+/* 공통 스타일 */
+button:hover {
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.95);
+}

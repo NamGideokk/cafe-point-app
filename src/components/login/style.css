@@ -1,0 +1,59 @@
+#phone-number__field {
+  position: absolute;
+  max-width: fit-content;
+  width: 80vw;
+  padding: 20px;
+  /* background-color: white; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.input__field {
+  margin-bottom: 20px;
+}
+
+.phone-number__input {
+  height: 50px;
+  width: 150px;
+  background: transparent;
+  padding: 0 10px;
+  font-size: 3rem;
+  border: none;
+  border-bottom: 3px solid black;
+  text-align: center;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.phone-number__input::-webkit-outer-spin-button,
+.phone-number__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.phone-number__input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.phone-number__input:focus {
+  outline: none;
+}
+
+.dash {
+  margin: 0 20px;
+  font-size: 2rem;
+}
+
+#point__button {
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  background-color: rgba(230, 230, 230, 0.3);
+  border-radius: 10px;
+  letter-spacing: 3px;
+}
+
+#point__button:hover {
+  background-color: rgba(230, 230, 230, 0.7);
+}
