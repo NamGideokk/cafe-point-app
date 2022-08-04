@@ -1,4 +1,4 @@
-import React, { useEffect, useReducer, useRef } from "react";
+import React, { useReducer, useRef } from "react";
 import "./style.css";
 import inputReducer from "../../features/reducers/inputReducer";
 import PhoneNumberForm from "../login/PhoneNumberForm";
@@ -14,7 +14,13 @@ const MainBackground = () => {
   }
   return (
     <div id="background-image" onClick={handleClick}>
-      {state ? <PhoneNumberForm /> : <TouchText />}
+      {state ? (
+        <>
+          <PhoneNumberForm />
+        </>
+      ) : (
+        <TouchText />
+      )}
     </div>
   );
 };

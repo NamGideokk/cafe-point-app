@@ -68,24 +68,6 @@
   justify-content: space-between;
 }
 
-#earn-point__button,
-#search-point__button {
-  font-size: 1.5rem;
-  width: fit-content;
-  padding: 10px 15px;
-  background-color: rgba(30, 30, 30, 0.3);
-  border: 1px solid white;
-  color: white;
-  border-radius: 10px;
-  letter-spacing: 2px;
-  /* margin: 0 10px; */
-}
-
-#earn-point__button:hover,
-#search-point__button:hover {
-  background-color: rgba(30, 30, 30, 0.7);
-}
-
 /* TouchText style */
 .touch-text__wrapper {
   width: 100vw;
@@ -102,6 +84,7 @@
   text-align: center;
   letter-spacing: 3px;
   cursor: default;
+  font-size: 2.5rem;
 }
 
 /* 미디어 쿼리 */
@@ -115,5 +98,9 @@
   .dash {
     margin: 0 15px;
     font-size: 1.6rem;
+  }
+
+  .touch-text {
+    font-size: 1.8rem;
   }
 }

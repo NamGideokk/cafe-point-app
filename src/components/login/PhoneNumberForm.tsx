@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "./style.css";
 import { BsDash } from "react-icons/bs";
+import SignUpButton from "../signUpButton/SignUpButton";
 
 const PhoneNumberForm = () => {
   const firstNumber = useRef<HTMLInputElement>(null);
@@ -43,13 +44,14 @@ const PhoneNumberForm = () => {
         />
       </div>
       <div className="button__field">
-        <button type="submit" id="earn-point__button">
+        <button type="submit" id="earn-point__button" className="button-st1">
           포인트 적립
         </button>
-        <button type="button" id="search-point__button">
+        <button type="button" id="search-point__button" className="button-st1">
           포인트 조회
         </button>
       </div>
+      <SignUpButton />
     </form>
   );
 };
