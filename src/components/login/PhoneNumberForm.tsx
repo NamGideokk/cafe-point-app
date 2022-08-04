@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import "./style.css";
 import { BsDash } from "react-icons/bs";
 
@@ -6,6 +6,10 @@ const PhoneNumberForm = () => {
   const firstNumber = useRef<HTMLInputElement>(null);
   const secondNumber = useRef<HTMLInputElement>(null);
   const thirdNumber = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    firstNumber.current?.focus();
+  }, []);
 
   function submitPhoneNumber(e: React.FormEvent) {
     e.preventDefault();
