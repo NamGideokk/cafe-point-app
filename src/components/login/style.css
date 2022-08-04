@@ -1,13 +1,16 @@
 #phone-number__field {
+  width: 100vw;
+  height: 100vh;
   position: absolute;
-  max-width: fit-content;
-  width: 80vw;
-  padding: 20px;
-  /* background-color: white; */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .input__field {
@@ -16,12 +19,13 @@
 
 .phone-number__input {
   height: 50px;
-  width: 150px;
+  width: 130px;
   background: transparent;
-  padding: 0 10px;
+  padding: 0 10px 10px;
   font-size: 2.8rem;
   border: none;
-  border-bottom: 3px solid black;
+  border-bottom: 2px solid white;
+  color: white;
   text-align: center;
 }
 
@@ -44,16 +48,33 @@
 .dash {
   margin: 0 20px;
   font-size: 2rem;
+  color: white;
 }
 
-#point__button {
+#earn-point__button,
+#search-point__button {
   font-size: 1.5rem;
-  padding: 5px 10px;
-  background-color: rgba(230, 230, 230, 0.3);
+  width: fit-content;
+  padding: 5px 15px;
+  background-color: rgba(30, 30, 30, 0.3);
+  border: 1px solid white;
+  color: white;
   border-radius: 10px;
   letter-spacing: 3px;
+  margin: 0 10px;
 }
 
-#point__button:hover {
-  background-color: rgba(230, 230, 230, 0.7);
+#earn-point__button:hover,
+#search-point__button:hover {
+  background-color: rgba(30, 30, 30, 0.7);
+}
+
+/* TouchText style */
+.touch-text {
+  position: absolute;
+  top: 70%;
+  width: 100vw;
+  color: white;
+  text-align: center;
+  letter-spacing: 3px;
 }

@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import "./style.css";
-import { BsDashLg } from "react-icons/bs";
+import { BsDash } from "react-icons/bs";
 
 const PhoneNumberForm = () => {
   const firstNumber = useRef<HTMLInputElement>(null);
@@ -21,7 +21,7 @@ const PhoneNumberForm = () => {
           className="phone-number__input"
           ref={firstNumber}
         />
-        <BsDashLg className="dash" />
+        <BsDash className="dash" />
         <input
           type="number"
           name="second"
@@ -29,7 +29,7 @@ const PhoneNumberForm = () => {
           className="phone-number__input"
           ref={secondNumber}
         />
-        <BsDashLg className="dash" />
+        <BsDash className="dash" />
         <input
           type="number"
           name="third"
@@ -38,9 +38,14 @@ const PhoneNumberForm = () => {
           ref={thirdNumber}
         />
       </div>
-      <button type="submit" id="point__button">
-        적립하기
-      </button>
+      <div className="button__field">
+        <button type="submit" id="earn-point__button">
+          포인트 적립
+        </button>
+        <button type="button" id="search-point__button">
+          포인트 조회
+        </button>
+      </div>
     </form>
   );
 };
