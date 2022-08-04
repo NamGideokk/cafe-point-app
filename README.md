@@ -42,4 +42,7 @@
 
 - Figma
 
-![image](https://user-images.githubusercontent.com/96227239/182629256-cf92e4c1-0090-47b2-a28f-5dba4e9abfe9.png) ![image](https://user-images.githubusercontent.com/96227239/182629335-8234a1c8-4b07-421d-bfcc-6d93763e99ec.png)
+![image](https://user-images.githubusercontent.com/96227239/182629256-cf92e4c1-0090-47b2-a28f-5dba4e9abfe9.png)
+![image](https://user-images.githubusercontent.com/96227239/182629335-8234a1c8-4b07-421d-bfcc-6d93763e99ec.png) 
+![image](https://user-images.githubusercontent.com/96227239/182850167-c7b1f6cb-d408-4251-b83c-dcbb528adc30.png)
+
