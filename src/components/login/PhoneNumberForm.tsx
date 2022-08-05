@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "./style.css";
 import { BsDash } from "react-icons/bs";
-import SignUpButton from "../signUpButton/SignUpButton";
+import SignUpButton from "../signUp/SignUpButton";
 
 const PhoneNumberForm = () => {
   const firstNumber = useRef<HTMLInputElement>(null);

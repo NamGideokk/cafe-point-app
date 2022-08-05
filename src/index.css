@@ -17,6 +17,10 @@ button:active {
   transform: scale(0.95);
 }
 
+input:focus {
+  outline: none;
+}
+
 /* 버튼 스타일 */
 .button-st1 {
   font-size: 1.5rem;
