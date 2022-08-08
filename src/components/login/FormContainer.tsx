@@ -3,7 +3,7 @@ import "./style.css";
 import { BsDash } from "react-icons/bs";
 import SignUpButton from "../signUp/SignUpButton";
 
-const PhoneNumberForm = () => {
+const FormContainer = () => {
   const firstNumber = useRef<HTMLInputElement>(null);
   const secondNumber = useRef<HTMLInputElement>(null);
   const thirdNumber = useRef<HTMLInputElement>(null);
@@ -56,4 +56,4 @@ const PhoneNumberForm = () => {
   );
 };
 
-export default PhoneNumberForm;
+export default FormContainer;

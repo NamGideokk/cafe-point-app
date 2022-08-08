@@ -1,7 +1,7 @@
 import React, { useReducer, useRef } from "react";
 import "./style.css";
 import inputReducer from "../../features/reducers/inputReducer";
-import PhoneNumberForm from "../login/PhoneNumberForm";
+import FormContainer from "../login/FormContainer";
 import TouchText from "../login/TouchText";
 
 const MainBackground = () => {
@@ -16,7 +16,7 @@ const MainBackground = () => {
     <div id="background-image" onClick={handleClick}>
       {state ? (
         <>
-          <PhoneNumberForm />
+          <FormContainer />
         </>
       ) : (
         <TouchText />
