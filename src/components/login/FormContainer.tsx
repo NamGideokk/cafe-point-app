@@ -1,12 +1,9 @@
 import React, { useEffect, useRef } from "react";
 import "./style.css";
-import { BsDash } from "react-icons/bs";
 import SignUpButton from "../signUp/SignUpButton";
 
 const FormContainer = () => {
   const firstNumber = useRef<HTMLInputElement>(null);
-  const secondNumber = useRef<HTMLInputElement>(null);
-  const thirdNumber = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     firstNumber.current?.focus();
@@ -17,30 +14,15 @@ const FormContainer = () => {
   }
 
   return (
-    <form id="phone-number__field" onSubmit={submitPhoneNumber}>
+    <form id="form__container" onSubmit={submitPhoneNumber}>
       <div className="input__field">
         <input
-          type="number"
-          name="first"
-          id="first-number"
+          type="text"
+          maxLength={11}
+          name="phone-number"
           className="phone-number__input"
+          placeholder="휴대폰 번호 11자리를 입력해 주세요 (숫자만)"
           ref={firstNumber}
-        />
-        <BsDash className="dash" />
-        <input
-          type="number"
-          name="second"
-          id="second-number"
-          className="phone-number__input"
-          ref={secondNumber}
-        />
-        <BsDash className="dash" />
-        <input
-          type="number"
-          name="third"
-          id="third-number"
-          className="phone-number__input"
-          ref={thirdNumber}
         />
       </div>
       <div className="button__field">

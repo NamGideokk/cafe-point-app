@@ -1,4 +1,4 @@
-#phone-number__field {
+#form__container {
   width: 100vw;
   height: 100vh;
   position: absolute;
@@ -13,50 +13,51 @@
   align-items: center;
   animation: fadeIn 1s;
 }
+.input__field,
+.button__field {
+  width: 380px;
+}
 
 .input__field {
-  margin-bottom: 60px;
-}
-
-.phone-number__input {
-  height: 50px;
-  width: 130px;
-  background: transparent;
-  padding-bottom: 10px;
-  font-size: 2.8rem;
-  border: none;
-  border-bottom: 2px solid white;
-  color: white;
-  text-align: center;
-}
-
-/* Chrome, Safari, Edge, Opera */
-.phone-number__input::-webkit-outer-spin-button,
-.phone-number__input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-.phone-number__input[type="number"] {
-  -moz-appearance: textfield;
-}
-
-.phone-number__input:focus {
-  outline: none;
-}
-
-.dash {
-  margin: 0 20px;
-  font-size: 2rem;
-  color: white;
+  margin-bottom: 40px;
 }
 
 .button__field {
-  max-width: 380px;
-  width: 80vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.phone-number__input {
+  width: 100%;
+  background: transparent;
+  padding-bottom: 12px;
+  font-size: 3rem;
+  border: none;
+  border-bottom: 2px solid white;
+  color: white;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.phone-number__input::placeholder {
+  color: var(--font-color-dark-white);
+  font-size: 0.95rem;
+}
+
+/* Chrome, Safari, Edge, Opera */
+/* .phone-number__input::-webkit-outer-spin-button,
+.phone-number__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+} */
+
+/* Firefox */
+/* .phone-number__input[type="number"] {
+  -moz-appearance: textfield;
+} */
+
+.phone-number__input:focus {
+  outline: none;
 }
 
 /* TouchText style */
@@ -84,10 +85,5 @@
     width: 100px;
     font-size: 2.2rem;
     padding-bottom: 2px;
-  }
-
-  .dash {
-    margin: 0 15px;
-    font-size: 1.6rem;
   }
 }

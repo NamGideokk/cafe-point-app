@@ -7,6 +7,10 @@
   font-family: "Nanum Gothic";
 }
 
+:root {
+  --font-color-dark-white: rgb(220, 220, 220);
+}
+
 /* 공통 스타일 */
 button:hover {
   transition: 0.3s;
