@@ -11,21 +11,6 @@
   color: white;
 }
 
-.move-up {
-  animation: move-up 1s forwards ease-in-out;
-}
-
-@keyframes move-up {
-  from {
-    /* transform: translateY(100); */
-    bottom: 5%;
-  }
-  to {
-    /* transform: translateY(-200); */
-    bottom: 80%;
-  }
-}
-
 /* SignUpForm style */
 .sign-up__form {
   width: 100%;

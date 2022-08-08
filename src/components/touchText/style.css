@@ -5,6 +5,12 @@
   letter-spacing: 3px;
   cursor: default;
   font-size: 2.3rem;
+  opacity: 0;
+
+  animation-fill-mode: forwards;
+  animation-name: fadeIn, changeScale;
+  animation-delay: 1s, 1s;
+  animation-duration: 1s, 1s;
 }
 
 /* 미디어 쿼리 */
