@@ -13,6 +13,10 @@ const FormContainer = () => {
     e.preventDefault();
   }
 
+  function handleClick() {
+    alert("hello");
+  }
+
   return (
     <form id="form__container" onSubmit={submitPhoneNumber}>
       <div className="input__field">
@@ -29,7 +33,12 @@ const FormContainer = () => {
         <Button type="submit" title="포인트 적립" />
         <Button type="button" title="포인트 조회" />
       </div>
-      <Button id="sign-up__button" type="button" title="회원가입" />
+      <Button
+        id="sign-up__button"
+        type="button"
+        title="회원가입"
+        onclickEvent={handleClick}
+      />
     </form>
   );
 };
