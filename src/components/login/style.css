@@ -23,8 +23,9 @@
 }
 
 .button__field {
+  padding: 0 2px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .phone-number__input {
@@ -56,27 +57,12 @@
   -moz-appearance: textfield;
 } */
 
-.phone-number__input:focus {
-  outline: none;
-}
-
-/* TouchText style */
-.touch-text__wrapper {
-  width: 100vw;
-  height: 100vh;
+#sign-up__button {
   position: absolute;
-  top: 0;
-  display: flex;
-  align-items: center;
-}
-
-.touch-text {
-  width: 100vw;
-  color: white;
-  text-align: center;
-  letter-spacing: 3px;
-  cursor: default;
-  font-size: 2.5rem;
+  bottom: 5%;
+  border: none;
+  background: none;
+  letter-spacing: 10px;
 }
 
 /* 미디어 쿼리 */

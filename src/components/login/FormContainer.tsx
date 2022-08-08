@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
+import Button from "../common/button/Button";
 import "./style.css";
-import SignUpButton from "../signUp/SignUpButton";
 
 const FormContainer = () => {
   const firstNumber = useRef<HTMLInputElement>(null);
@@ -26,14 +26,10 @@ const FormContainer = () => {
         />
       </div>
       <div className="button__field">
-        <button type="submit" id="earn-point__button" className="button-st1">
-          포인트 적립
-        </button>
-        <button type="button" id="search-point__button" className="button-st1">
-          포인트 조회
-        </button>
+        <Button type="submit" title="포인트 적립" />
+        <Button type="button" title="포인트 조회" />
       </div>
-      <SignUpButton />
+      <Button id="sign-up__button" type="button" title="회원가입" />
     </form>
   );
 };

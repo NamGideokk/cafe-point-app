@@ -1,0 +1,14 @@
+.button-st1 {
+  font-size: 1.5rem;
+  width: fit-content;
+  padding: 10px 15px;
+  background-color: rgba(30, 30, 30, 0.3);
+  border: 1px solid white;
+  color: white;
+  border-radius: 10px;
+  letter-spacing: 2px;
+}
+
+.button-st1:hover {
+  background-color: rgba(30, 30, 30, 0.7);
+}
