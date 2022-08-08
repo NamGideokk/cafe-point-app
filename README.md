@@ -40,7 +40,11 @@
 
 ## 화면 구성
 
-- Figma
+- Figma - https://www.figma.com/file/AX9hjhwbyIE3Wiq9LMubWn/cafe-point-app?node-id=0%3A1
+
+- 설계 순서
+  - 디자인, UI 그리기 -> 컴포넌트 or 요소로 구조 분해 -> 컴포넌트 계층도 작성 -> 컴포넌트 별 기능 작성
+  - ![image](https://user-images.githubusercontent.com/96227239/183342124-3cc9f2af-12d9-42bc-922a-438e39bc1b59.png)
 
 ![image](https://user-images.githubusercontent.com/96227239/182629256-cf92e4c1-0090-47b2-a28f-5dba4e9abfe9.png)
 ![image](https://user-images.githubusercontent.com/96227239/182629335-8234a1c8-4b07-421d-bfcc-6d93763e99ec.png) 
