@@ -1,27 +1,10 @@
-import React, { useReducer, useRef } from "react";
+import React, { useRef } from "react";
 import "./style.css";
-import inputReducer from "../../features/reducers/inputReducer";
-import FormContainer from "../login/FormContainer";
-import TouchText from "../touchText/TouchText";
 
 const MainBackground = () => {
-  const [state, dispatch] = useReducer(inputReducer, false);
   const counterRef = useRef<number>(0);
 
-  function handleClick() {
-    dispatch({ type: "SET_ON" });
-  }
-  return (
-    <div id="background-image" onClick={handleClick}>
-      {state ? (
-        <>
-          <FormContainer />
-        </>
-      ) : (
-        <TouchText />
-      )}
-    </div>
-  );
+  return <div id="background-image"></div>;
 };
 
 export default MainBackground;

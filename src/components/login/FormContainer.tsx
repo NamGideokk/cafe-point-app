@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import { NavLink } from "react-router-dom";
 import Button from "../common/button/Button";
 import "./style.css";
 
@@ -11,10 +12,6 @@ const FormContainer = () => {
 
   function submitPhoneNumber(e: React.FormEvent) {
     e.preventDefault();
-  }
-
-  function handleClick() {
-    alert("hello");
   }
 
   return (
@@ -33,12 +30,9 @@ const FormContainer = () => {
         <Button type="submit" title="포인트 적립" />
         <Button type="button" title="포인트 조회" />
       </div>
-      <Button
-        id="sign-up__button"
-        type="button"
-        title="회원가입"
-        onclickEvent={handleClick}
-      />
+      <NavLink to="/signup">
+        <Button id="sign-up__button" type="button" title="회원가입" />
+      </NavLink>
     </form>
   );
 };

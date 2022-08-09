@@ -1,11 +1,10 @@
 import React from "react";
-import MainBackground from "../components/mainBackground/MainBackground";
-import SignUpForm from "../components/signUp/SignUpForm";
+import MainLayout from "../layout/MainLayout";
 
 const Home: React.FC = () => {
   return (
     <>
-      <MainBackground />
+      <MainLayout />
     </>
   );
 };
