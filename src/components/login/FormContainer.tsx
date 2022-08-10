@@ -15,7 +15,7 @@ const FormContainer = () => {
   }
 
   return (
-    <form id="form__container" onSubmit={submitPhoneNumber}>
+    <form className="container" onSubmit={submitPhoneNumber}>
       <div className="input__field">
         <input
           type="text"

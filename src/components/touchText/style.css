@@ -7,6 +7,8 @@
   font-size: 2.3rem;
   opacity: 0;
   text-shadow: 0 0 2px black;
+  position: absolute;
+  top: 50%;
 
   animation-fill-mode: forwards;
   animation-name: fadeIn, changeScale;

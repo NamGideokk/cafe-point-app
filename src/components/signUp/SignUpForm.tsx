@@ -3,7 +3,7 @@ import "./style.css";
 
 const SignUpForm = () => {
   return (
-    <form className="sign-up__form">
+    <form className="sign-up__form container">
       <div>
         <div className="label__container">
           <span className="input__label">휴대폰 번호</span>
