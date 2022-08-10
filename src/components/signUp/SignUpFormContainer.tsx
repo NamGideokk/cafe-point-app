@@ -1,9 +1,19 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./signUpFormContainer.css";
 
 const SignUpFormContainer = () => {
+  const navi = useNavigate();
+
+  function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+  }
+
+  function handleGoBack() {
+    navi("/signin");
+  }
   return (
-    <form className="sign-up__form container">
+    <form className="sign-up__form container" onSubmit={handleSubmit}>
       <div>
         <div className="label__container">
           <span className="input__label">휴대폰 번호</span>
@@ -31,7 +41,7 @@ const SignUpFormContainer = () => {
         <button type="submit" className="button-st1">
           가입하기
         </button>
-        <button type="button" className="button-st1">
+        <button type="button" className="button-st1" onClick={handleGoBack}>
           뒤로가기
         </button>
       </div>

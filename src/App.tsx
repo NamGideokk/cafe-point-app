@@ -1,18 +1,18 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import EarnPointContainer from "./components/earnPoint/EarnPointContainer";
-import FormContainer from "./components/login/FormContainer";
-import SignUpFormContainer from "./components/signUp/SignUpFormContainer";
+import EarnPoint from "./pages/EarnPoint";
 import Home from "./pages/Home";
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/signin" element={<FormContainer />} />
-      <Route path="/signup" element={<SignUpFormContainer />} />
-      <Route path="/earnpoint" element={<EarnPointContainer />} />
+      <Route path="/signin" element={<SignIn />} />
+      <Route path="/signup" element={<SignUp />} />
+      <Route path="/earnpoint" element={<EarnPoint />} />
     </Routes>
   );
 }
