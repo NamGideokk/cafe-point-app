@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import "./style.css";
+import "./mainBackground.css";
 
 const MainBackground = () => {
   const counterRef = useRef<number>(0);

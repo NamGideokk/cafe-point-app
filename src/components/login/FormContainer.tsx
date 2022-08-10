@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
 import Button from "../common/button/Button";
-import "./style.css";
+import "./formContainer.css";
 
 const FormContainer = () => {
   const firstNumber = useRef<HTMLInputElement>(null);
