@@ -2,7 +2,7 @@ import React, { useReducer } from "react";
 import inputReducer from "../features/reducers/inputReducer";
 import MainBackground from "../components/mainBackground/MainBackground";
 import "./mainLayout.css";
-import TouchText from "../components/touchText/TouchText";
+import TouchTextContainer from "../components/touchText/TouchTextContainer";
 
 type MainBackgroundProps = {
   innerComponent?: React.ReactNode;
@@ -18,7 +18,7 @@ const MainLayout = ({ innerComponent }: MainBackgroundProps) => {
   return (
     <div onClick={handleClick}>
       <MainBackground />
-      {state ? innerComponent : <TouchText />}
+      {state ? innerComponent : <TouchTextContainer />}
     </div>
   );
 };

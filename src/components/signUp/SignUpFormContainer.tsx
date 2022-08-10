@@ -1,7 +1,7 @@
 import React from "react";
-import "./signUpForm.css";
+import "./signUpFormContainer.css";
 
-const SignUpForm = () => {
+const SignUpFormContainer = () => {
   return (
     <form className="sign-up__form container">
       <div>
@@ -39,4 +39,4 @@ const SignUpForm = () => {
   );
 };
 
-export default SignUpForm;
+export default SignUpFormContainer;

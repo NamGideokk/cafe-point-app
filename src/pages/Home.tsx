@@ -1,11 +1,11 @@
 import React from "react";
-import FormContainer from "../components/login/FormContainer";
+import TouchTextContainer from "../components/touchText/TouchTextContainer";
 import MainLayout from "../layout/MainLayout";
 
 const Home: React.FC = () => {
   return (
     <>
-      <MainLayout innerComponent={<FormContainer />} />
+      <MainLayout innerComponent={<TouchTextContainer />} />
     </>
   );
 };
