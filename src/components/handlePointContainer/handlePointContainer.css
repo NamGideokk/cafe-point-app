@@ -1,7 +1,3 @@
-.container-width {
-  max-width: 400px;
-  width: 90vw;
-}
 .items-margin {
   gap: 20px;
 }
@@ -39,19 +35,7 @@
 }
 .label__container > label > input {
   margin-bottom: 10px;
-}
-
-.point__field {
-}
-.point__field > h2 {
-  margin-bottom: 10px;
-}
-
-#arrow-right__icon {
-  font-size: 1.2rem;
-}
-
-#points-after-earning {
-  background-color: transparent;
-  color: greenyellow;
+  accent-color: yellowgreen;
+  width: 15px;
+  height: 15px;
 }

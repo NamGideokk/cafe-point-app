@@ -1,0 +1,38 @@
+/* EarnPointContainer style & RedeemPointContainer common style */
+.point__field {
+  animation: fadeIn 1s;
+}
+
+#arrow-right__icon {
+  font-size: 1.2rem;
+}
+
+.first__p {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.second__p {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+/* EarnPointContainer style */
+#points-after-earning {
+  background-color: transparent;
+  color: greenyellow;
+}
+
+/* RedeemPointContainer style */
+#redeem-point__input {
+  background-color: transparent;
+  border: none;
+  text-align: right;
+  color: white;
+  width: 90px;
+  font-size: 1.5rem;
+}
+
+#points-after-redeem {
+  background-color: transparent;
+  color: red;
+}

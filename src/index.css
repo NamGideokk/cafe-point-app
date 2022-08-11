@@ -21,7 +21,6 @@ button:active {
   transform: scale(0.95);
 }
 
-button:focus,
 input:focus {
   outline: none;
 }
@@ -46,4 +45,10 @@ input:focus {
   justify-content: center;
   align-items: center;
   animation: fadeIn 1s;
+}
+
+/* 수정 요망 */
+.container-width {
+  max-width: 400px;
+  width: 90vw;
 }
