@@ -1,34 +1,42 @@
-.items-margin {
-  gap: 20px;
+/* 결제금액 label */
+.amount-paid__label {
+  position: absolute;
+  transform: translate(5px, 25px);
 }
 
 .amount-paid__input {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid white;
-  width: 70%;
-}
-.amount-paid__field {
-}
-.amount-paid__input {
+  width: 100%;
   color: white;
   font-size: 3rem;
   text-align: right;
   padding-right: 40px;
 }
+
 #won {
   font-size: 1.8rem;
   position: absolute;
-  transform: translate(-25px, 15px);
+  transform: translate(-30px, 15px);
 }
 
 .check-box__field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 .check-box__field > h3 {
   margin-bottom: 10px;
 }
+
 .label__container {
-  display: flex;
+}
+
+.method__label {
+  margin: 0 30px;
+  width: fit-content;
 }
 .label__container > label {
   display: block;

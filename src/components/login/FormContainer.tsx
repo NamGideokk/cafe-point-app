@@ -1,9 +1,10 @@
 import React, { useEffect, useRef } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import Button from "../common/button/Button";
 import "./formContainer.css";
 
 const FormContainer = () => {
+  const navi = useNavigate();
   const firstNumber = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
@@ -12,6 +13,10 @@ const FormContainer = () => {
 
   function submitPhoneNumber(e: React.FormEvent) {
     e.preventDefault();
+  }
+
+  function handlePointEarn() {
+    navi("/point");
   }
 
   return (
@@ -28,7 +33,11 @@ const FormContainer = () => {
           />
         </div>
         <div className="button__field">
-          <Button type="submit" title="포인트 적립" />
+          <Button
+            type="submit"
+            title="포인트 적립"
+            onclickEvent={handlePointEarn}
+          />
           <Button type="button" title="포인트 조회" />
         </div>
         <NavLink to="/signup">

@@ -45,6 +45,7 @@ input:focus {
   justify-content: center;
   align-items: center;
   animation: fadeIn 1s;
+  gap: 40px;
 }
 
 /* 수정 요망 */
