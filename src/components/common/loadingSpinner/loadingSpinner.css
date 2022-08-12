@@ -1,0 +1,27 @@
+.circle {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  border-top-color: rgb(16, 128, 255);
+  border-radius: 50%;
+  animation: spin 2.2s infinite;
+}
+.circle2 {
+  width: 30px;
+  height: 30px;
+  border: 3px solid rgba(255, 255, 255, 0);
+  border-bottom-color: rgb(70, 157, 255);
+  border-radius: 50%;
+
+  animation: spin 2.2s infinite ease-in;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(2turn);
+  }
+}

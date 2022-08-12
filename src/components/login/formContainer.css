@@ -33,6 +33,7 @@
 #sign-up__button {
   position: absolute;
   bottom: 5%;
+  left: 50%;
   transform: translateX(-50%);
   border: none;
   background: none;
