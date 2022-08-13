@@ -30,16 +30,20 @@ const FormContainer = () => {
   return (
     <article className="article">
       <form className="container" onSubmit={handlePointEarn}>
-        <section className="input__field">
-          <input
-            type="text"
-            maxLength={11}
-            name="phone-number"
-            className="phone-number__input"
-            placeholder="휴대폰 번호 11자리를 입력해 주세요 (숫자만)"
-            ref={firstNumber}
-          />
-        </section>
+        <main className="login__field">
+          <p className="login-phone-guide">
+            휴대폰 번호 11자리를 입력해 주세요 (숫자만)
+          </p>
+          <section className="input__field">
+            <input
+              type="text"
+              maxLength={11}
+              name="phone-number"
+              className="phone-number__input"
+              ref={firstNumber}
+            />
+          </section>
+        </main>
         <section className="button__field">
           <Button type="submit" title="포인트 적립" />
           <Button

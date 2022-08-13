@@ -23,11 +23,16 @@
   color: white;
   letter-spacing: 3px;
   text-align: center;
+  margin-top: 20px;
 }
 
-.phone-number__input::placeholder {
-  color: var(--font-color-dark-white);
-  font-size: 0.95rem;
+.login-phone-guide {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.login__field:focus-within .login-phone-guide {
+  opacity: 1;
 }
 
 #sign-up__button {
