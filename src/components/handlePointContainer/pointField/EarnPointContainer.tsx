@@ -3,13 +3,13 @@ import { ImArrowRight2 } from "react-icons/im";
 import Button from "../../common/button/Button";
 import "./pointContainer.css";
 
-type PointProp = {
+export type PointProps = {
   point: string;
   prevPoint: string;
   afterPoint: string;
 };
 
-const EarnPointContainer = ({ point, prevPoint, afterPoint }: PointProp) => {
+const EarnPointContainer = ({ point, prevPoint, afterPoint }: PointProps) => {
   const date = new Date();
   const year: number = date.getFullYear();
 
@@ -20,13 +20,14 @@ const EarnPointContainer = ({ point, prevPoint, afterPoint }: PointProp) => {
   let minute: string = String(date.getMinutes());
   let second: string = String(date.getSeconds());
 
+  // 리팩토링?
   if (month.length === 1) month = month.padStart(2, "0");
   if (day.length === 1) day = day.padStart(2, "0");
   if (hour.length === 1) hour = hour.padStart(2, "0");
   if (minute.length === 1) minute = minute.padStart(2, "0");
   if (second.length === 1) second = second.padStart(2, "0");
 
-  console.log(`${year}-${month}-${day} ${hour}:${minute}:${second}`);
+  // console.log(`${year}-${month}-${day} ${hour}:${minute}:${second}`);
 
   return (
     <div className="point__field container-width">

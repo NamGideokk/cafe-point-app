@@ -25,15 +25,6 @@
 }
 
 /* RedeemPointContainer style */
-#redeem-point__input {
-  background-color: transparent;
-  border: none;
-  text-align: right;
-  color: white;
-  width: 90px;
-  font-size: 1.5rem;
-}
-
 #points-after-redeem {
   background-color: transparent;
   color: red;

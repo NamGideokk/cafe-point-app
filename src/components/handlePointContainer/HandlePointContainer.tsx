@@ -6,6 +6,7 @@ import RedeemPointContainer from "./pointField/RedeemPointContainer";
 const EarnPointContainer = () => {
   const [amountPaid, setAmountPaid] = useState<string>("");
   const [point, setPoint] = useState<string>("earn");
+  const dummyPoint = "21000";
 
   // test data
   const prevPoint: string = "0";
@@ -23,7 +24,7 @@ const EarnPointContainer = () => {
 
   // 결제 금액 => 포인트 계산기
   function accrualRate(amountPaid: string): string {
-    let amountPaidAsNumber: number = parseInt(amountPaid);
+    const amountPaidAsNumber: number = parseInt(amountPaid);
     if (!amountPaidAsNumber) return "0";
     return String(Math.round(amountPaidAsNumber * 0.05));
   }
@@ -31,6 +32,13 @@ const EarnPointContainer = () => {
   // 이전 포인트 + 적립될 포인트 계산기
   function pointsAfterEarning(prevPoint: string, point: string): string {
     return String(parseInt(prevPoint) + parseInt(point));
+  }
+
+  // 잔여 포인트 계산기
+  function remainingPoint(prevPoint: string, pointToUse: string): string {
+    const result = parseInt(prevPoint) - parseInt(pointToUse);
+    if (!result) return dummyPoint;
+    return String(result);
   }
 
   return (
@@ -74,14 +82,18 @@ const EarnPointContainer = () => {
             </label>
           </div>
         </section>
-        {point == "earn" ? (
+        {point === "earn" ? (
           <EarnContainer
             point={accrualRate(amountPaid)}
             prevPoint={prevPoint}
             afterPoint={pointsAfterEarning(prevPoint, accrualRate(amountPaid))}
           />
         ) : (
-          <RedeemPointContainer />
+          <RedeemPointContainer
+            point={!amountPaid ? "0" : amountPaid}
+            prevPoint={dummyPoint}
+            afterPoint={remainingPoint(dummyPoint, amountPaid)}
+          />
         )}
       </form>
     </article>
