@@ -11,15 +11,18 @@ const FormContainer = () => {
     firstNumber.current?.focus();
   }, []);
 
+  // 포인트 적립 버튼 클릭
   function handlePointEarn(e: React.FormEvent) {
     e.preventDefault();
     navi("/point");
   }
 
+  // 회원가입 버튼 클릭
   function handleSignUp() {
     navi("/signup");
   }
 
+  // 포인트 조회 버튼 클릭
   function handleMyPoint() {
     navi("/mypoint");
   }
