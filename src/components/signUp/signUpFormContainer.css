@@ -1,11 +1,8 @@
-.sign-up__form {
-}
-
-.sign-up__form > div:first-child {
+.sign-up__form > main {
   margin-bottom: 50px;
 }
 
-.sign-up__form > div:last-child {
+.sign-up__form > section {
   max-width: 300px;
   width: 80vw;
   display: flex;
@@ -16,13 +13,14 @@
   display: flex;
   justify-content: space-between;
 }
-.label__container > span {
-  margin-top: 20px;
-}
 
 .input__label {
   color: white;
   pointer-events: none;
+}
+
+#phoneNumber__input {
+  margin-bottom: 40px;
 }
 
 .guide {
