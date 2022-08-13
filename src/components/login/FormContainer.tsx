@@ -11,21 +11,22 @@ const FormContainer = () => {
     firstNumber.current?.focus();
   }, []);
 
-  function submitPhoneNumber(e: React.FormEvent) {
+  function handlePointEarn(e: React.FormEvent) {
     e.preventDefault();
-  }
-
-  function handlePointEarn() {
     navi("/point");
   }
 
-  function handleSignUpButton() {
+  function handleSignUp() {
     navi("/signup");
+  }
+
+  function handleMyPoint() {
+    navi("/mypoint");
   }
 
   return (
     <article className="article">
-      <form className="container" onSubmit={submitPhoneNumber}>
+      <form className="container" onSubmit={handlePointEarn}>
         <section className="input__field">
           <input
             type="text"
@@ -37,18 +38,18 @@ const FormContainer = () => {
           />
         </section>
         <section className="button__field">
+          <Button type="submit" title="포인트 적립" />
           <Button
-            type="submit"
-            title="포인트 적립"
-            onclickEvent={handlePointEarn}
+            type="button"
+            title="포인트 조회"
+            onclickEvent={handleMyPoint}
           />
-          <Button type="button" title="포인트 조회" />
         </section>
         <Button
           id="sign-up__button"
           type="button"
           title="회원가입"
-          onclickEvent={handleSignUpButton}
+          onclickEvent={handleSignUp}
         />
       </form>
     </article>

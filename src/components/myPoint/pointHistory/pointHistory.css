@@ -1,0 +1,36 @@
+/* PointHistoryItem style */
+.point-history__item {
+  width: 99%;
+  color: black;
+  margin-bottom: 15px;
+}
+
+#history-date {
+  text-align: right;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 5px;
+  padding-right: 5px;
+}
+
+.history-info {
+  /* background-color: brown; */
+  background-color: rgba(233, 233, 233, 0.8);
+  border-radius: 5px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.history-info > section > h4 {
+  margin-bottom: 7px;
+}
+
+.history-info > section > p {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+#right-arrow__icon {
+  transform: translateY(5px);
+}
