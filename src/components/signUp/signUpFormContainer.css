@@ -19,23 +19,37 @@
   pointer-events: none;
 }
 
-#phoneNumber__input {
+#phone-number__input {
   margin-bottom: 40px;
 }
 
 .guide {
   color: rgb(200, 200, 200);
   font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.phone-guide,
+.name-guide {
+  opacity: 0;
 }
 
 .sign-up__input {
   background: transparent;
   border: none;
   border-bottom: 2px solid white;
+
   padding-bottom: 10px;
   color: white;
   font-size: 2rem;
   width: 300px;
   margin: 10px 0;
-  text-align: center;
+}
+
+.phone-number__section:focus-within .phone-guide {
+  opacity: 1;
+}
+
+.name__section:focus-within .name-guide {
+  opacity: 1;
 }
