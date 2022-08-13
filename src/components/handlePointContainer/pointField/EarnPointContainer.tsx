@@ -11,23 +11,22 @@ export type PointProps = {
 
 const EarnPointContainer = ({ point, prevPoint, afterPoint }: PointProps) => {
   const date = new Date();
-  const year: number = date.getFullYear();
+  const _date = date
+    .toLocaleDateString([], {
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+    })
+    .replaceAll(".", "")
+    .replaceAll(" ", "-");
+  const time = date.toLocaleTimeString([], {
+    hour12: false,
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+  });
 
-  // 두자리 수 이상으로 출력하기 위해 string type으로 변환
-  let month: string = String(date.getMonth() + 1);
-  let day: string = String(date.getDate());
-  let hour: string = String(date.getHours());
-  let minute: string = String(date.getMinutes());
-  let second: string = String(date.getSeconds());
-
-  // 리팩토링?
-  if (month.length === 1) month = month.padStart(2, "0");
-  if (day.length === 1) day = day.padStart(2, "0");
-  if (hour.length === 1) hour = hour.padStart(2, "0");
-  if (minute.length === 1) minute = minute.padStart(2, "0");
-  if (second.length === 1) second = second.padStart(2, "0");
-
-  // console.log(`${year}-${month}-${day} ${hour}:${minute}:${second}`);
+  console.log(`${_date} ${time}`);
 
   return (
     <div className="point__field container-width">

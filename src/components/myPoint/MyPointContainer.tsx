@@ -1,7 +1,6 @@
 import React from "react";
 import "./myPointContainer.css";
 import PointHistoryItem from "./pointHistory/PointHistoryItem";
-import { AiFillQuestionCircle } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 import Button from "../common/button/Button";
 
@@ -12,6 +11,10 @@ const MyPointContainer = () => {
     navi("/signin");
   }
 
+  function handleHoverEvent() {
+    // 회원 등급 안내 모달창 생성
+  }
+
   return (
     <article className="article">
       <section className="container container-width-lg">
@@ -19,10 +22,12 @@ const MyPointContainer = () => {
           <h1 className="info__title">남기덕님의 포인트</h1>
           <ul className="details-info">
             <li className="info-list">
-              회원 등급{" "}
+              회원 등급
               <span>
-                Bronze
-                <AiFillQuestionCircle id="quetion__icon" />
+                Bronze{" "}
+                <span id="quetion__icon" onMouseEnter={handleHoverEvent}>
+                  ?
+                </span>
               </span>
             </li>
             <li className="info-list">
