@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./handlePointContainer.css";
 import EarnContainer from "./pointField/EarnPointContainer";
 import RedeemPointContainer from "./pointField/RedeemPointContainer";
+import currencyFormatter from "../../features/currencyFormatter";
 
 const EarnPointContainer = () => {
   const [amountPaid, setAmountPaid] = useState<string>("");
@@ -39,11 +40,6 @@ const EarnPointContainer = () => {
     const result = parseInt(prevPoint) - parseInt(pointToUse);
     if (!result) return dummyPoint;
     return String(result);
-  }
-
-  // 화폐 단위(, = 콤마 추가) 출력용 함수
-  function currencyFormatter(value: string): string {
-    return parseInt(value).toLocaleString("ko-KR");
   }
 
   return (
