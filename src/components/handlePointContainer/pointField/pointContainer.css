@@ -9,8 +9,15 @@
 }
 
 .first__p {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.point__mark {
+  background: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 1.6rem;
 }
 
 .second__p {
