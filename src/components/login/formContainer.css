@@ -29,6 +29,7 @@
 .login-phone-guide {
   opacity: 0;
   transition: 0.3s;
+  animation: fadeIn 1s;
 }
 
 .login__field:focus-within .login-phone-guide {
@@ -43,6 +44,12 @@
   border: none;
   background: none;
   letter-spacing: 6px;
+}
+
+#checking__icon {
+  color: greenyellow;
+  transition: 0.3s;
+  animation: fadeIn 1s;
 }
 
 /* 미디어 쿼리 */
