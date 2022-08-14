@@ -1,9 +1,9 @@
 import React from "react";
-import FormContainer from "../components/login/FormContainer";
+import SignInFormContainer from "../components/signIn/SignInFormContainer";
 import MainLayout from "../layout/MainLayout";
 
 const SignIn = () => {
-  return <MainLayout innerComponent={<FormContainer />} />;
+  return <MainLayout innerComponent={<SignInFormContainer />} />;
 };
 
 export default SignIn;

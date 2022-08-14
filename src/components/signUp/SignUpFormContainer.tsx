@@ -43,6 +43,7 @@ const SignUpFormContainer = () => {
   // 가입하기 버튼 클릭
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
+    alert("가입이 완료되었습니다. 👏");
     navi("/signin");
   }
 

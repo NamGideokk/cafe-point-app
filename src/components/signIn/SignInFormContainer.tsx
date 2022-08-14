@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "../common/button/Button";
-import "./formContainer.css";
+import "./signInFormContainer.css";
 import { BsCheckLg } from "react-icons/bs";
 
 type PhoneNumber = {
@@ -9,7 +9,7 @@ type PhoneNumber = {
   regResult: boolean; // 입력값 정규표현식 검사 통과 여부
 };
 
-const FormContainer = () => {
+const SignInFormContainer = () => {
   const navi = useNavigate();
   const [phoneNumber, setPhoneNumber] = useState<PhoneNumber>({
     phone: "",
@@ -91,4 +91,4 @@ const FormContainer = () => {
   );
 };
 
-export default FormContainer;
+export default SignInFormContainer;
