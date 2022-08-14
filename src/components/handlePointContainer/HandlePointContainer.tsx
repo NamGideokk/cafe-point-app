@@ -41,6 +41,11 @@ const EarnPointContainer = () => {
     return String(result);
   }
 
+  // 화폐 단위(, = 콤마 추가) 출력용 함수
+  function currencyFormatter(value: string): string {
+    return parseInt(value).toLocaleString("ko-KR");
+  }
+
   return (
     <article className="article">
       <form className="container">
@@ -84,15 +89,19 @@ const EarnPointContainer = () => {
         </section>
         {point === "earn" ? (
           <EarnContainer
-            point={accrualRate(amountPaid)}
-            prevPoint={prevPoint}
-            afterPoint={pointsAfterEarning(prevPoint, accrualRate(amountPaid))}
+            point={currencyFormatter(accrualRate(amountPaid))}
+            prevPoint={currencyFormatter(prevPoint)}
+            afterPoint={currencyFormatter(
+              pointsAfterEarning(prevPoint, accrualRate(amountPaid))
+            )}
           />
         ) : (
           <RedeemPointContainer
-            point={!amountPaid ? "0" : amountPaid}
-            prevPoint={dummyPoint}
-            afterPoint={remainingPoint(dummyPoint, amountPaid)}
+            point={!amountPaid ? "0" : currencyFormatter(amountPaid)}
+            prevPoint={currencyFormatter(dummyPoint)}
+            afterPoint={currencyFormatter(
+              remainingPoint(dummyPoint, amountPaid)
+            )}
           />
         )}
       </form>
