@@ -53,3 +53,8 @@
 .name__section:focus-within .name-guide {
   opacity: 1;
 }
+
+#phone-check__icon {
+  color: greenyellow;
+  animation: fadeIn 1s;
+}

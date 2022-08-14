@@ -5,14 +5,14 @@ import "./formContainer.css";
 import { BsCheckLg } from "react-icons/bs";
 
 type PhoneNumber = {
-  value: string; // 휴대폰 번호 입력값
+  phone: string; // 휴대폰 번호 입력값
   regResult: boolean; // 입력값 정규표현식 검사 통과 여부
 };
 
 const FormContainer = () => {
   const navi = useNavigate();
   const [phoneNumber, setPhoneNumber] = useState<PhoneNumber>({
-    value: "",
+    phone: "",
     regResult: false,
   });
 
@@ -24,8 +24,8 @@ const FormContainer = () => {
     const regResult = phoneReg.test(value);
 
     regResult
-      ? setPhoneNumber({ value: value, regResult: true })
-      : setPhoneNumber({ value: value, regResult: false });
+      ? setPhoneNumber({ phone: value, regResult: true })
+      : setPhoneNumber({ phone: value, regResult: false });
   }
 
   // 포인트 적립 버튼 클릭
@@ -61,7 +61,7 @@ const FormContainer = () => {
               maxLength={11}
               name="phone-number"
               className="phone-number__input"
-              value={phoneNumber.value}
+              value={phoneNumber.phone}
               onChange={handlePhoneNumber}
               autoFocus
             />
