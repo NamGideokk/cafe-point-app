@@ -68,11 +68,16 @@ const FormContainer = () => {
           </section>
         </main>
         <section className="button__field">
-          <Button type="submit" title="포인트 적립" />
+          <Button
+            type="submit"
+            title="포인트 적립"
+            isDisabled={!phoneNumber.regResult}
+          />
           <Button
             type="button"
             title="포인트 조회"
             onclickEvent={handleMyPoint}
+            isDisabled={!phoneNumber.regResult}
           />
         </section>
         <Button
